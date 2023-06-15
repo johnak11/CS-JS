@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAM-GRADING</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+    <div>
+        <h3 id="gtitle" class="text-center bg-success"></h3>
+        <p id="grade1" class="text-center mt-3"></p>
+        <p id="grade2" class="text-center mt-3"></p>
+        <p id="grade3" class="text-center mt-3"></p>
+        <p id="grade4" class="text-center mt-3"></p>
+        <p id="grade5" class="text-center mt-3"></p>
+        <p id="grade6" class="text-center mt-3"></p>
+        <p id="invalid" class="text-center mt-3"></p>
+        
+    </div>
+
+
+
+    <script>
+        document.getElementById('gtitle').innerHTML='GRADING SYSTEM'
+        
+        let score=77;
+        if(score>=70 && score<=100){
+            document.getElementById('grade1').innerHTML='YOUR GRADE IS A'
+            console.log('A')
+        }
+            
+            let score1=60;
+        if(score1>=60 && score1<=70){
+            document.getElementById('grade2').innerHTML='YOUR GRADE IS B'
+            console.log('B') 
+        }
+
+        let score2=55;
+        if(score2>=50 && score2<=60){
+            document.getElementById('grade3').innerHTML='YOUR GRADE IS C'
+            console.log('C') 
+        }
+
+        let score3=49.999;
+        if(score3>=45 && score3<=50){
+            document.getElementById('grade4').innerHTML='YOUR GRADE IS D'
+            console.log('D') 
+        }
+
+        let score4=44.7;
+        if(score4>=40 && score4<=45){
+            document.getElementById('grade5').innerHTML='YOUR GRADE IS E'
+            console.log('E')
+        } 
+
+        let score5=39.9999;
+        if(score5>=0 && score5<=40){
+            document.getElementById('grade6').innerHTML='YOUR GRADE IS F'
+            console.log('F')  
+        }
+
+        let score6=-50;
+        if(score6<=0){
+            document.getElementById('invalid').innerHTML='INVALID!'
+            console.log('INVALID!') 
+        }
+
+
+    </script>
+  <script src="bootstrap.bundle.min.js"></script>  
+</body>
+</html>
